@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button android:text="存数据SharedPreferences"
+        android:onClick="saveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button android:text="取数据SharedPreferences"
+        android:onClick="getData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button android:text="创建SQLite"
+        android:background="#2222dd"
+        android:onClick="createSQLite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/userId"
+        android:hint="ID暂时不用输入"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/userName"
+        android:hint="输入姓名"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button android:text="存入数据库"
+        android:onClick="saveDataToSQL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button android:text="从数据库读取数据"
+    android:onClick="getDataFromSQL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/deleteId"
+        android:hint="删除的ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button android:text="从数据库删除数据"
+        android:onClick="deleteDataFromSQL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
